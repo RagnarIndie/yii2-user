@@ -3,6 +3,10 @@ Yii 2 User
 
 Yii 2 User - User authentication module
 
+## Fork
+
+Custom modification for private project
+
 ## New version released 01/31/2016
 
 This release contains a few small updates and bug fixes. Most notably, I've changed
