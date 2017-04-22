@@ -1,6 +1,6 @@
 <?php
 
-namespace amnah\yii2\user;
+namespace RagnarIndie\yii2\user;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -100,11 +100,11 @@ class Module extends \yii\base\Module
     public $forceTranslation = false;
 
     /**
-     * @var array Model classes, e.g., ["User" => "amnah\yii2\user\models\User"]
+     * @var array Model classes, e.g., ["User" => "RagnarIndie\yii2\user\models\User"]
      * Usage:
      *   $user = Yii::$app->getModule("user")->model("User", $config);
      *   (equivalent to)
-     *   $user = new \amnah\yii2\user\models\User($config);
+     *   $user = new \RagnarIndie\yii2\user\models\User($config);
      *
      * The model classes here will be merged with/override the [[getDefaultModelClasses()|default ones]]
      */
@@ -182,8 +182,8 @@ class Module extends \yii\base\Module
         // "common/config" instead of "frontend/config" and/or "backend/config"
         //   -> this results in users failing to login without any feedback/error message
         $userComponent = Yii::$app->get('user', false);
-        if ($userComponent && !$userComponent instanceof \amnah\yii2\user\components\User) {
-            throw new InvalidConfigException('Yii::$app->user is not set properly. It needs to extend \amnah\yii2\user\components\User');
+        if ($userComponent && !$userComponent instanceof \RagnarIndie\yii2\user\components\User) {
+            throw new InvalidConfigException('Yii::$app->user is not set properly. It needs to extend \RagnarIndie\yii2\user\components\User');
         }
     }
 
@@ -199,20 +199,20 @@ class Module extends \yii\base\Module
         } elseif (class_exists('app\models\User')) {
             $userClass = 'app\models\User';
         } else {
-            $userClass = 'amnah\yii2\user\models\User';
+            $userClass = 'RagnarIndie\yii2\user\models\User';
         }
 
         return [
             'User' => $userClass,
-            'Profile' => 'amnah\yii2\user\models\Profile',
-            'Role' => 'amnah\yii2\user\models\Role',
-            'UserToken' => 'amnah\yii2\user\models\UserToken',
-            'UserAuth' => 'amnah\yii2\user\models\UserAuth',
-            'ForgotForm' => 'amnah\yii2\user\models\forms\ForgotForm',
-            'LoginForm' => 'amnah\yii2\user\models\forms\LoginForm',
-            'ResendForm' => 'amnah\yii2\user\models\forms\ResendForm',
-            'UserSearch' => 'amnah\yii2\user\models\search\UserSearch',
-            'LoginEmailForm' => 'amnah\yii2\user\models\forms\LoginEmailForm',
+            'Profile' => 'RagnarIndie\yii2\user\models\Profile',
+            'Role' => 'RagnarIndie\yii2\user\models\Role',
+            'UserToken' => 'RagnarIndie\yii2\user\models\UserToken',
+            'UserAuth' => 'RagnarIndie\yii2\user\models\UserAuth',
+            'ForgotForm' => 'RagnarIndie\yii2\user\models\forms\ForgotForm',
+            'LoginForm' => 'RagnarIndie\yii2\user\models\forms\LoginForm',
+            'ResendForm' => 'RagnarIndie\yii2\user\models\forms\ResendForm',
+            'UserSearch' => 'RagnarIndie\yii2\user\models\search\UserSearch',
+            'LoginEmailForm' => 'RagnarIndie\yii2\user\models\forms\LoginEmailForm',
         ];
     }
 

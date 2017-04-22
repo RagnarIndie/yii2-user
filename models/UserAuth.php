@@ -1,6 +1,6 @@
 <?php
 
-namespace amnah\yii2\user\models;
+namespace RagnarIndie\yii2\user\models;
 
 use Yii;
 use yii\db\ActiveRecord;

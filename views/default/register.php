@@ -6,9 +6,9 @@ use yii\widgets\ActiveForm;
 /**
  * @var yii\web\View $this
  * @var yii\widgets\ActiveForm $form
- * @var amnah\yii2\user\Module $module
- * @var amnah\yii2\user\models\User $user
- * @var amnah\yii2\user\models\User $profile
+ * @var RagnarIndie\yii2\user\Module $module
+ * @var RagnarIndie\yii2\user\models\User $user
+ * @var RagnarIndie\yii2\user\models\User $profile
  * @var string $userDisplayName
  */
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace amnah\yii2\user\models;
+namespace RagnarIndie\yii2\user\models;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -31,7 +31,7 @@ class Profile extends ActiveRecord
     }
 
     /**
-     * @var \amnah\yii2\user\Module
+     * @var \RagnarIndie\yii2\user\Module
      */
     public $module;
 

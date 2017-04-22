@@ -5,10 +5,10 @@ use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var amnah\yii2\user\Module $module
- * @var amnah\yii2\user\models\User $user
- * @var amnah\yii2\user\models\Profile $profile
- * @var amnah\yii2\user\models\Role $role
+ * @var RagnarIndie\yii2\user\Module $module
+ * @var RagnarIndie\yii2\user\models\User $user
+ * @var RagnarIndie\yii2\user\models\Profile $profile
+ * @var RagnarIndie\yii2\user\models\Role $role
  * @var yii\widgets\ActiveForm $form
  */
 
